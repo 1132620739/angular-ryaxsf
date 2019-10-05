@@ -1,0 +1,12 @@
+
+<div class="container" *ngFor="let tmp of array;let index=index">
+  <p class="price">{{tmp}}</p>
+  <button (click)="add(index)">click</button>
+</div>
+<hr>
+<!-- <input #txt type="text"> -->
+<p #txt>sfgdfgdfg</p>
+<button (click)="handle(txt.innerHTML)">eventevent</button>
+
+<p appHightlight>sdgdfg d</p>
+<p>{{"1" | languageChange}}<p>

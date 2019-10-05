@@ -1,0 +1,15 @@
+<button [disabled]="true" (click)="getData1()">getData</button><br><br>
+<button [disabled]="true">getAllData</button><br><br>
+<a href="#">click disabled</a>
+
+<p *ngFor="let key of objectKeys(member)">
+ {{member[key]}}
+</p>
+
+<div [ngClass]="{blue:true,red:true}">{{1+1+getVal()}}</div>
+<button (click)="study($event)" value="click">$event</button><br><br>
+
+<button (click)="changeItem()">change</button><br>
+<li *ngFor="let item of items;trackBy:trackByIndex">{{item.name}}</li>
+
+
